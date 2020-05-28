@@ -1,3 +1,4 @@
 def shortest_word(string)
-  string.length
+  shortest = string.split(' ').min_by(&:length)
+  shortest.chars.count
 end
